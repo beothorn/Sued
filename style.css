@@ -2,6 +2,10 @@ body{
   background-color: black;
 }
 
+.width-strech{
+  width: 100%;
+}
+
 #content {
   width: 1139px ;
   position: relative;
