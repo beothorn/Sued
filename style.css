@@ -1,0 +1,42 @@
+body{
+  background-color: black;
+}
+
+#content {
+  width: 1139px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+#cursor{
+  vertical-align: top;
+}
+
+#text-entry{
+  display: inline;
+}
+
+#question-input{
+  background-color: red;
+  color: yellow;
+  vertical-align: middle;
+}
+
+#answer-frame{
+  display: none;
+}
+
+.blink {
+  animation: blink 1s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
