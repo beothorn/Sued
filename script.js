@@ -85,6 +85,7 @@ $(function(){
 					answer = answer.substring(0, question.length - 1);
 				}
 				question = question.substring(0, question.length - 1);
+				e.preventDefault();
 			}
 			if(key == 13){
 				if(answer == ""){
