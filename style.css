@@ -4,6 +4,7 @@ body{
 
 #content {
   width: 1139px ;
+  position: relative;
   margin-left: auto ;
   margin-right: auto ;
 }
@@ -24,7 +25,25 @@ body{
 
 #answer-frame{
   display: none;
+
+  position: absolute;
+  top: 100px;
+  left: 341px;
+  width: 100%;
 }
+
+#answer{
+  color: yellow;
+}
+
+#answer{
+  position: absolute;
+  top: 293px;
+  /* left: 62px; */
+  text-align: center;
+  width: 457px;
+}
+
 
 .blink {
   animation: blink 1s steps(5, start) infinite;

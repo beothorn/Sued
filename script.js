@@ -51,10 +51,26 @@ var answers = [
 var suedQuestion = questions.getRandomElement();
 var question = "";
 var isReplacingQuestion = false;
+var isShowingAnswer = false;
 var answer = "";
 
+var showAnswer = function(){
+	$("#answer-frame").fadeIn();
+	$("#answer").text(answer);
+	isShowingAnswer = true;
+};
+
 $(function(){
+	$("#answer-frame").click(function(){
+		$("#answer-frame").fadeOut();
+		answer = "";
+		question = "";
+		$("#text-entry").text(question);
+		isShowingAnswer = false;
+	});
+
 	$(document).keypress(function(e){
+			if(isShowingAnswer) return;
 			var key = e.keyCode;
 			if(key == 13) return;
 			var letter =  String.fromCharCode(key).toUpperCase();
@@ -76,8 +92,9 @@ $(function(){
 			}
 
 			$("#text-entry").text(question);
-	})
+	});
 	$(document).keydown(function(e){
+			if(isShowingAnswer) return;
 			var key = e.keyCode;
 			if(key == 8){
 				if(isReplacingQuestion){
@@ -90,11 +107,9 @@ $(function(){
 				if(answer == ""){
 					answer = answers.getRandomElement();
 				}
-				$("#text-entry").text(answer);
-				answer = "";
-				question = "";
+				showAnswer();
 				return;
 			}
 			$("#text-entry").text(question);
-	})
+	});
 });
