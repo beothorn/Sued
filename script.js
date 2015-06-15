@@ -108,6 +108,7 @@ $(function(){
 				e.preventDefault();
 			}
 			if(key == 13){
+				if(question == "") return;
 				if(answer == ""){
 					answer = answers.getRandomElement();
 				}
