@@ -7,17 +7,35 @@ http://beothorn.github.io/Sued
   
   
 Se não quiser estragar a brincadeira e saber como ele funciona pare de ler agora.  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+.    
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.  
+.    
 Antes de começar a pergunta aperte ; e digite a resposta. Enquanto você digita a resposta um começo de pergunta genérico vai aparecer na tela.  
 Assim que terminar de digitar a resposta aperte ; novamente para completar a pergunta.  
 Recomendo começar com perguntas de sim e não, partir pra perguntas com respostas simples e por último perguntas assustadoras :)  
