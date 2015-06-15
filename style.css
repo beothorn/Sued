@@ -33,7 +33,7 @@ body{
   position: absolute;
   top: 100px;
   left: 341px;
-  width: 100%;
+  width: 457px;
 }
 
 #answer{
@@ -43,11 +43,12 @@ body{
 #answer{
   position: absolute;
   top: 293px;
-  /* left: 62px; */
+  left: 44px;
   text-align: center;
-  width: 457px;
+  width: 366px;
 }
 
+/*   BLINK                        */
 
 .blink {
   animation: blink 1s steps(5, start) infinite;
@@ -62,4 +63,20 @@ body{
   to {
     visibility: hidden;
   }
+}
+
+/*  Zoom                      */
+.small-zoom {
+-webkit-transform:scale(0); /*Webkit: Scale down image to 0.8x original size*/
+-moz-transform:scale(0); /*Mozilla scale version*/
+-o-transform:scale(0); /*Opera scale version*/
+}
+
+.full-zoom {
+-webkit-transform:scale(1.0); /*Webkit: Scale up image to 1.2x original size*/
+-moz-transform:scale(1.0); /*Mozilla scale version*/
+-o-transform:scale(1.0); /*Opera scale version*/
+-webkit-transition-duration: 3.5s; /*Webkit: Animation duration*/
+-moz-transition-duration: 3.5s; /*Mozilla duration version*/
+-o-transition-duration: 3.5s; /*Opera duration version*/
 }

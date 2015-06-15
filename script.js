@@ -57,6 +57,8 @@ var answer = "";
 var showAnswer = function(){
 	$("#answer-frame").fadeIn();
 	$("#answer").text(answer);
+	$("#answer").removeClass("small-zoom");
+	$("#answer").addClass("full-zoom");
 	isShowingAnswer = true;
 };
 
@@ -67,6 +69,8 @@ $(function(){
 		question = "";
 		$("#text-entry").text(question);
 		isShowingAnswer = false;
+		$("#answer").removeClass("full-zoom");
+		$("#answer").addClass("small-zoom");
 	});
 
 	$(document).keypress(function(e){
