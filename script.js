@@ -75,7 +75,7 @@ $(function(){
 
 	$(document).keypress(function(e){
 			if(isShowingAnswer) return;
-			var key = e.keyCode;
+			var key = e.charCode || e.keyCode;
 			if(key == 13) return;
 			var letter =  String.fromCharCode(key).toUpperCase();
 			if(key == 44)
@@ -99,7 +99,7 @@ $(function(){
 	});
 	$(document).keydown(function(e){
 			if(isShowingAnswer) return;
-			var key = e.keyCode;
+			var key = e.charCode || e.keyCode;
 			if(key == 8){
 				if(isReplacingQuestion){
 					answer = answer.substring(0, question.length - 1);
