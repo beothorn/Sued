@@ -22,7 +22,7 @@ body{
 }
 
 #question-input{
-  background-color: red;
+  background-color: #FF1F1F;
   color: yellow;
   vertical-align: middle;
 }
@@ -67,16 +67,16 @@ body{
 
 /*  Zoom                      */
 .small-zoom {
--webkit-transform:scale(0); /*Webkit: Scale down image to 0.8x original size*/
--moz-transform:scale(0); /*Mozilla scale version*/
--o-transform:scale(0); /*Opera scale version*/
+  -webkit-transform:scale(0); /*Webkit: Scale down image to 0.8x original size*/
+  -moz-transform:scale(0); /*Mozilla scale version*/
+  -o-transform:scale(0); /*Opera scale version*/
 }
 
 .full-zoom {
--webkit-transform:scale(1.0); /*Webkit: Scale up image to 1.2x original size*/
--moz-transform:scale(1.0); /*Mozilla scale version*/
--o-transform:scale(1.0); /*Opera scale version*/
--webkit-transition-duration: 4s; /*Webkit: Animation duration*/
--moz-transition-duration: 4s; /*Mozilla duration version*/
--o-transition-duration: 4s; /*Opera duration version*/
+  -webkit-transform:scale(1.0); /*Webkit: Scale up image to 1.2x original size*/
+  -moz-transform:scale(1.0); /*Mozilla scale version*/
+  -o-transform:scale(1.0); /*Opera scale version*/
+  -webkit-transition-duration: 4s; /*Webkit: Animation duration*/
+  -moz-transition-duration: 4s; /*Mozilla duration version*/
+  -o-transition-duration: 4s; /*Opera duration version*/
 }
