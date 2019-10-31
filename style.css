@@ -65,6 +65,16 @@ body{
   }
 }
 
+.skull-size{
+  height: 3%;
+  width: 2%;
+}
+
+.background-image{
+  object-fit: cover;
+  height: 50%;
+}
+
 /*  Zoom                      */
 .small-zoom {
   -webkit-transform:scale(0); /*Webkit: Scale down image to 0.8x original size*/
